@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'SCDream2';
+  src: url('./SCDream2.otf') format('opentype');
+}
+@font-face {
+  font-family: 'SCDream3';
+  src: url('./SCDream3.otf') format('opentype');
+}
+@font-face {
+  font-family: 'SCDream5';
+  src: url('./SCDream5.otf') format('opentype');
+}
+@font-face {
+  font-family: 'SUITE-ExtraBold';
+  src: url('./SUITE-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SUITE-SemiBold';
+  src: url('./SUITE-SemiBold.ttf') format('truetype');
+}

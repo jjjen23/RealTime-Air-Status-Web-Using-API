@@ -1,0 +1,192 @@
+.totalgroup {
+  height: 383px;
+  width: 728px;
+  position: relative;
+}
+
+.totalgroup .boxtitle {
+  color: #020715;
+  font-family: "SCDream5";
+  font-size: 20px;
+  position: absolute;
+  left: 2px;
+}
+
+.totalgroup .caibox {
+  height: 383px;
+  width: 728px;
+  top: 0;
+  left: 0;
+}
+
+.totalgroup .caibox .legends {
+  position: absolute;
+  background-color: #efefef;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px #00000040;
+          box-shadow: 4px 4px 10px #00000040;
+  height: 350px;
+  width: 728px;
+  top: 33px;
+  left: 0;
+}
+
+.totalgroup .caibox .legends .ellipses {
+  height: 105px;
+  width: 10px;
+  position: absolute;
+  top: 124px;
+  left: 478px;
+}
+
+.totalgroup .caibox .legends .ellipses .ellipse {
+  position: absolute;
+  background-color: #58aad7;
+  border-radius: 5px;
+  height: 10px;
+  width: 10px;
+  left: 0;
+  top: 0;
+}
+
+.totalgroup .caibox .legends .ellipses .ellipse1 {
+  position: absolute;
+  background-color: #8bc348;
+  border-radius: 5px;
+  height: 10px;
+  width: 10px;
+  left: 0;
+  top: 32px;
+}
+
+.totalgroup .caibox .legends .ellipses .ellipse2 {
+  position: absolute;
+  background-color: #fdc154;
+  border-radius: 5px;
+  height: 10px;
+  width: 10px;
+  left: 0;
+  top: 64px;
+}
+
+.totalgroup .caibox .legends .ellipses .ellipse3 {
+  position: absolute;
+  background-color: #ff655b;
+  border-radius: 5px;
+  height: 10px;
+  width: 10px;
+  left: 0;
+  top: 95px;
+}
+
+.totalgroup .caibox .legends .ranges {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 499px;
+  top: 117px;
+  position: absolute;
+}
+
+.totalgroup .caibox .legends .ranges .verygood {
+  color: #000;
+  font-family: "SUITE-SemiBold";
+  font-size: 10px;
+  position: relative;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  line-height: 25px;
+}
+
+.totalgroup .caibox .legends .ranges .good {
+  color: #000;
+  font-family: "SUITE-SemiBold";
+  font-size: 10px;
+  position: relative;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  line-height: 40px;
+}
+
+.totalgroup .caibox .legends .ranges .bad {
+  color: #000;
+  font-family: "SUITE-SemiBold";
+  font-size: 10px;
+  position: relative;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  line-height: 22px;
+}
+
+.totalgroup .caibox .legends .ranges .verybad {
+  color: #000;
+  font-family: "SUITE-SemiBold";
+  font-size: 10px;
+  position: relative;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  line-height: 42px;
+}
+
+.totalgroup .caibox .caiGraph {
+  height: 260px;
+  left: 171px;
+  width: 264px;
+  top: 50px;
+  position: absolute;
+}
+
+.totalgroup .caibox .caiGraph .overlap {
+  width: 268px;
+  height: 268px;
+  left: -4px;
+  position: relative;
+}
+
+.totalgroup .caibox .caiGraph .overlap .caigraphimg {
+  height: 260px;
+  left: 4px;
+  width: 260px;
+  top: 39px;
+  position: absolute;
+}
+
+.totalgroup .caibox .caiGraph .overlap .value {
+  position: absolute;
+  color: #ff655b;
+  font-family: "SUITE-ExtraBold";
+  font-size: 74px;
+  left: 22px;
+  top: 125px;
+  width: 224px;
+  text-align: center;
+}
+
+.totalgroup .caibox .caiGraph .overlap .state {
+  position: absolute;
+  color: #ff655b;
+  font-family: "SCDream5";
+  font-size: 25px;
+  left: 63px;
+  top: 100px;
+  width: 142px;
+  text-align: center;
+  line-height: 22px;
+}
+/*# sourceMappingURL=caiComponent.module.css.map */

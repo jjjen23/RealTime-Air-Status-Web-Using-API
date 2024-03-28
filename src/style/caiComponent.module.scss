@@ -1,0 +1,170 @@
+.totalgroup{
+  height: 383px;
+  width: 728px;
+  position: relative;
+
+  .boxtitle {
+    color: #020715;
+    font-family: "SCDream5";
+    font-size: 20px;
+    position: absolute;
+    left: 2px;
+  }
+  
+  .caibox {
+    height: 383px;
+    width: 728px;
+    top: 0;
+    left: 0;
+
+    .legends{
+      position: absolute;
+      background-color: #efefef;
+      border-radius: 10px;
+      box-shadow: 4px 4px 10px #00000040;
+      height: 350px;
+      width: 728px;
+      top: 33px;
+      left: 0;
+
+      .ellipses {
+        height: 105px;
+        width: 10px;
+        position: absolute;
+        top: 124px;
+        left: 478px;
+
+        .ellipse {
+          position: absolute;
+          background-color: #58aad7;
+          border-radius: 5px;
+          height: 10px;
+          width: 10px;
+          left: 0;
+          top: 0;
+        }
+        .ellipse1 {
+          position: absolute;
+          background-color: #8bc348;
+          border-radius: 5px;
+          height: 10px;
+          width: 10px;
+          left: 0;
+          top: 32px;
+        }
+        .ellipse2 {
+          position: absolute;
+          background-color: #fdc154;
+          border-radius: 5px;
+          height: 10px;
+          width: 10px;
+          left: 0;
+          top: 64px;
+        }
+        .ellipse3 {
+          position: absolute;
+          background-color: #ff655b;
+          border-radius: 5px;
+          height: 10px;
+          width: 10px;
+          left: 0;
+          top: 95px;
+        }
+      }
+
+    .ranges {
+      align-items: flex-start;
+      // display: inline-block;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+      left: 499px;
+      top: 117px;
+      position: absolute;
+      
+      .verygood{
+        color: #000;
+        font-family: "SUITE-SemiBold";
+        font-size: 10px;
+        position: relative;
+        text-align: center;
+        width: fit-content;
+        line-height: 25px;
+      }
+      .good {
+        color: #000;
+        font-family: "SUITE-SemiBold";
+        font-size: 10px;
+        position: relative;
+        text-align: center;
+        width: fit-content;
+        line-height: 40px;
+      }
+      .bad {
+        color: #000;
+        font-family: "SUITE-SemiBold";
+        font-size: 10px;
+        position: relative;
+        text-align: center;
+        width: fit-content;
+        line-height: 22px;
+      }
+      .verybad {
+        color: #000;
+        font-family: "SUITE-SemiBold";
+        font-size: 10px;
+        position: relative;
+        text-align: center;
+        width: fit-content;
+        line-height: 42px;
+      }
+    }
+    }
+  .caiGraph {
+    height: 260px;
+    left: 171px;
+    width: 264px;
+    top: 50px;
+    position: absolute;
+
+    .overlap{
+      width: 268px;
+      height: 268px;
+      left: -4px;
+      position: relative;
+
+      .caigraphimg{
+        height: 260px;
+        left: 4px;
+        width: 260px;
+        top: 39px;
+        position: absolute;
+      }
+
+      .value{
+        position: absolute;
+        color: #ff655b;
+        font-family: "SUITE-ExtraBold";
+        font-size: 74px;
+        left: 22px;
+        top: 125px;
+        width: 224px;
+        text-align: center;
+      }
+      .state{
+        position: absolute;
+        color: #ff655b;
+        font-family: "SCDream5";
+        font-size: 25px;
+        left: 63px;
+        top: 100px;
+        width: 142px;
+        text-align: center;
+        line-height: 22px;
+      }
+    }
+  }
+  }
+
+
+}

@@ -1,0 +1,181 @@
+.desktop {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+
+  .div {
+    background-color: ivory;
+    height: 1024px;
+    position: relative;
+    width: 1440px;
+
+    .navbar {
+      background-color: black;
+      border-radius: 20px;
+      box-shadow: 10px 10px 40px 10px #00000040;
+      position: absolute;
+      top: 47px;
+      left: 45px;
+      height: 934px;
+      width: 106px;
+
+      // div로 크기 조정하고, img는 100%로 할 것
+      .topdiv {
+        position: relative;
+        height: 75px;
+        width: 75px;
+        top: 30px;
+        left: 15px;
+
+        .logoicon {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .bottomdiv {
+        position: relative;
+        top: 680px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .bottomdiv1 {
+          position: absolute;
+          width: 43px;
+          height: 41px;
+          margin-left: -2px;
+
+          .favicon {
+            height: 100%;
+            width: 100%;
+          }
+        }
+        .bottomdiv2 {
+          position: absolute;
+          width: 38px;
+          height: 32px;
+          top: 84px;
+          
+
+          .homeicon {
+            height: 100%;
+            width: 100%;
+          }
+        }  
+      }
+    }
+
+  .titlegroup{
+    position: absolute;
+    left: 202px;
+    top:83px;
+    display: flex;
+    flex-direction: row;
+    
+
+    .titlelocation{
+      color: #020715;
+      font-family: "SCDream5";
+      font-size: 65px;
+      margin: -15px 0;
+    }
+  
+    .titlefavimgdiv{
+      margin-top: 15px;
+      margin-left: 20px;
+      width: 43px;
+      height: 41px;
+
+      .titlefavimg{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .currentTime {
+    position: absolute;
+    top: 82px;
+    left: 1057px;
+    color: #505050;
+    font-family: "SCDream2";
+    font-size: 20px;
+  }    
+
+
+  .selection1 {
+    height: 85px;
+    width: 357px;
+    position: absolute;
+    top: 205px;
+    left: 204px;
+    .selection1Text {
+      position: absolute;
+      font-size: 20px;
+      color: #020715;
+      font-family: "SCDream5";
+      left: 2px;
+      top: 0px;
+    }
+    .dropdownWrapper1{
+      background-color: #efefef;
+      border-radius: 10px;
+      box-shadow: 4px 4px 10px #00000040;
+      height: 52px;
+      width: 355px;
+      position: absolute;
+      top: 35px;
+      width: 355px;
+      .dropdown1{
+        position: absolute;;
+        height: 12px;
+        width: 21px;
+        top: 22px;
+        left: 304px;;
+      }
+    }
+  }
+
+  .selection2 {
+    height: 85px;
+    width: 355px;
+    left: 581px;
+    top: 205px;
+    position: absolute;
+
+    .selection2Text {
+      position: absolute;
+      font-size: 20px;
+      color: #020715;
+      font-family: "SCDream5";
+      left: 3px;
+      top: 0px;
+    }
+    .dropdownWrapper2{
+      background-color: #efefef;
+      border-radius: 10px;
+      box-shadow: 4px 4px 10px #00000040;
+      height: 52px;
+      width: 355px;
+      position: absolute;
+      top: 35px;
+      width: 355px;
+      .dropdown2{
+        position: absolute;;
+        height: 12px;
+        width: 21px;
+        top: 22px;
+        left: 304px;;
+      }
+    }
+  }
+
+  .comp {
+    position: absolute;
+    top: 10px;
+  }
+  }
+}

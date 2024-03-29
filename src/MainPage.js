@@ -5,6 +5,10 @@ import homeicon from "./img/homeicon.png"
 import favicon from "./img/favicon.png"
 import dropdownicon from "./img/dropdownicon.png"
 import CAIComponent from "./components/CAIComponent";
+import FineDustCom from "./components/FineDustCom" ;
+import UltraDust from "./components/UltraDustCom";
+import NoticeCom from "./components/NoticeCom";
+import MapCom from "./components/MapCom";
 
 
 function MainPage() {
@@ -39,7 +43,24 @@ function MainPage() {
           </div>
         </div>
         
-        <div style={{marginTop:"330px", marginLeft: "200px"}}><CAIComponent></CAIComponent></div>
+       
+      <div style={{display:"flex", flexDirection:"row"}}>
+          
+          <div style={{display:"flex", flexDirection:"column", marginTop:"350px", marginLeft:"200px"}}>
+            <div style={{marginLeft: "0px"}}><CAIComponent></CAIComponent></div>
+            
+            <div style={{display:"flex", flexDirection:"row"}}>
+                  <div style={{marginTop:"35px", marginLeft:"0px"}}><FineDustCom></FineDustCom></div>
+                  <div style={{marginTop:"35px", marginLeft:"22px"}}><UltraDust></UltraDust></div>
+            </div>
+          </div>
+
+          <div style={{display:"flex", flexDirection:"column", marginTop:"208px"}}>
+            <div style={{marginTop:"0px", marginLeft:"63px"}}><NoticeCom></NoticeCom></div>
+            <div style={{marginTop:"35px", marginLeft:"63px"}}><MapCom></MapCom></div>
+          </div>
+      </div>
+      
 
       </div>
       

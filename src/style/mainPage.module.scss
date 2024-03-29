@@ -1,15 +1,19 @@
 .desktop {
-  background-color: #fff;
+  background-color: ivory;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 
   .div {
-    background-color: ivory;
-    height: 1024px;
+    background-color: #fff;
+    height: 100vh;
     position: relative;
     width: 1440px;
+    flex-direction: row;
+    justify-content: center;
 
     .navbar {
       background-color: black;

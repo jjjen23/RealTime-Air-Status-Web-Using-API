@@ -1,0 +1,28 @@
+.topbox {
+  height: 552px;
+  width: 350px;
+  position: relative;
+  .mapbox {
+    height: 522px;
+    width: 352px;
+    .title {
+      color: #020715;
+      font-family: "SCDream5";
+      font-size: 20px;
+      position: absolute;
+      left: 3px;
+
+    }
+    .map {
+      margin-top: 9px;
+      background-color: #efefef;
+      position: absolute;
+      border-radius: 10px;
+      box-shadow: 4px 4px 10px #00000040;
+      width: 350px;
+      height: 519px;
+      position: absolute;
+      top: 27px;
+    }
+  }
+}

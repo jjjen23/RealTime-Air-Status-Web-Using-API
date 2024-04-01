@@ -13,6 +13,7 @@
 }
 
 .box .finedust {
+  margin-top: 9px;
   height: 199px;
   width: 356px;
   top: 0;
@@ -30,10 +31,6 @@
   top: 29px;
   left: 0;
   position: absolute;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .box .finedust .overlay .value {

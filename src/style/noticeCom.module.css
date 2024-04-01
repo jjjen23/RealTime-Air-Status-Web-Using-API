@@ -19,6 +19,7 @@
 }
 
 .topbox .noticebox .overlap {
+  margin-top: 5px;
   background-color: #efefef;
   position: absolute;
   border-radius: 10px;

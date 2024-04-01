@@ -1,0 +1,49 @@
+.selection2 {
+  height: 85px;
+  width: 355px;
+  position: relative;
+}
+
+.selection2 .selection2Text {
+  position: absolute;
+  font-size: 20px;
+  color: #020715;
+  font-family: "SCDream5";
+  left: 3px;
+  top: 0px;
+}
+
+.selection2 .dropdownWrapper2 {
+  margin-top: 5px;
+  background-color: #efefef;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px #00000040;
+          box-shadow: 4px 4px 10px #00000040;
+  height: 52px;
+  width: 355px;
+  position: relative;
+  top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.selection2 .dropdownWrapper2 .iconwrap {
+  position: absolute;
+  height: 12px;
+  width: 21px;
+  margin-right: 15px;
+  margin-top: -5px;
+}
+
+.selection2 .dropdownWrapper2 .iconwrap img {
+  height: 100%;
+  width: 100%;
+}
+/*# sourceMappingURL=selectCom.module.css.map */

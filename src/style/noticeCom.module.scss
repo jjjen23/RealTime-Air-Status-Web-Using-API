@@ -2,6 +2,7 @@
   height: 173px;
   width: 350px;
   position: relative;
+
   .noticebox {
     height: 173px;
     width: 354px;
@@ -16,6 +17,7 @@
     }
     
   .overlap {
+    margin-top: 5px;
     background-color: #efefef;
     position: absolute;
     border-radius: 10px;

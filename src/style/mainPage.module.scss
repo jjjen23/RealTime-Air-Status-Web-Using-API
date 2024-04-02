@@ -1,18 +1,19 @@
 .desktop {
   background-color: ivory;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100vw;
   height: 100vh;
+  width: 100vw;
 
   .div {
     background-color: #fff;
-    height: 100vh;
-    position: relative;
-    width: 1440px;
+    height: 100%;
+    width: 100%;
+    display: flex;
     flex-direction: row;
+    gap:60px;
+    align-items: center;
     justify-content: center;
 
     .navbar {
@@ -24,6 +25,7 @@
       position: relative;
       display: flex;
       justify-content: center;
+      
       
 
       // div로 크기 조정하고, img는 100%로 할 것
@@ -69,6 +71,7 @@
   .titlegroup{
     display: flex;
     flex-direction: row;
+    
 
     .titlelocation{
       color: #020715;
@@ -92,8 +95,8 @@
 
   .currentTime {
     display: flex;
-    justify-content: right;
-    align-items: center;
+    // justify-content: right;
+    // align-items: center;
 
       p {
       color: #505050;

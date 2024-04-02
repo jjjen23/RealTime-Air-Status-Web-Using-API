@@ -146,49 +146,11 @@
   line-height: 42px;
 }
 
-.totalgroup .caibox .caiGraph {
-  height: 260px;
-  left: 171px;
-  width: 264px;
-  top: 50px;
+.totalgroup .caibox .graph {
   position: absolute;
-}
-
-.totalgroup .caibox .caiGraph .overlap {
-  width: 268px;
-  height: 268px;
-  left: -4px;
-  position: relative;
-}
-
-.totalgroup .caibox .caiGraph .overlap .caigraphimg {
-  height: 260px;
-  left: 4px;
+  height: 264px;
   width: 260px;
-  top: 39px;
-  position: absolute;
-}
-
-.totalgroup .caibox .caiGraph .overlap .value {
-  position: absolute;
-  color: #ff655b;
-  font-family: "SUITE-ExtraBold";
-  font-size: 74px;
-  left: 22px;
-  top: 125px;
-  width: 224px;
-  text-align: center;
-}
-
-.totalgroup .caibox .caiGraph .overlap .state {
-  position: absolute;
-  color: #ff655b;
-  font-family: "SCDream5";
-  font-size: 25px;
-  left: 63px;
-  top: 100px;
-  width: 142px;
-  text-align: center;
-  line-height: 22px;
+  top: 78px;
+  left: 171px;
 }
 /*# sourceMappingURL=caiComponent.module.css.map */

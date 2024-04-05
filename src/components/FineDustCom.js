@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../style/fineDustCom.module.css"
 
-function FineDustCom() {
+function FineDustCom({res}) {
+
+
   return(
     <div className={styles.box}>
       <div className={styles.title}>미세먼지 지수</div>
       <div className={styles.finedust}>
         <div className={styles.overlay}>
-          <div className={styles.value}>95</div>
+          <div className={styles.value}>{res.pm25Value}</div>
           <div className={styles.state}>보통</div>
           <div className={styles.group}>
             <div className={styles.ellipse1}/>

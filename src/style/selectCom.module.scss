@@ -1,9 +1,29 @@
-.selection2 {
+.selection1 {
   height: 85px;
   width: 355px;
   position: relative;
 
-  .selection2Text {
+  .list{
+    position: absolute;
+    top: 90px;
+    width: 355px;
+    max-height: 120px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    background-color:#efefef;
+    font-family: "SCDream5";
+    box-shadow: 4px 4px 10px #00000040;
+    z-index: 3;
+
+    .select{
+      background-color: #efefef;
+      padding: 10px;
+      font-size: 17px;
+    }
+  }
+
+  .selection1Text {
     position: absolute;
     font-size: 20px;
     color: #020715;
@@ -11,7 +31,7 @@
     left: 3px;
     top: 0px;
   }
-  .dropdownWrapper2{
+  .dropdownWrapper1{
     margin-top: 5px;
     background-color: #efefef;
     border-radius: 10px;
@@ -24,6 +44,13 @@
     justify-content: flex-end;
     align-items: center;
     
+    .printitem {
+      font-family: "SCDream5";
+      width: 355px;
+      text-align: center;
+      margin-right: 20px;
+      font-size: 17px;
+    }
 
     .iconwrap {
       position: absolute;;

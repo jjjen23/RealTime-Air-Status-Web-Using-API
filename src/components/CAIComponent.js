@@ -1,6 +1,5 @@
 import React from "react"
 import styles from "../style/caiComponent.module.css"
-import caigraphimg from "../img/caiGrapgImg.png"
 import { PieChart } from "react-minimal-pie-chart";
 
 function CAIComponent() {
@@ -47,7 +46,7 @@ function CAIComponent() {
             ]}
             reveal={60} 
             lineWidth={13}
-            background="#f3f3f3"
+            background="lightgray"
             lengthAngle={360}
             rounded
             animate

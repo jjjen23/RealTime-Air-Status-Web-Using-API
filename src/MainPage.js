@@ -14,6 +14,8 @@ import 'moment/locale/ko';
 import axios from "axios";
 const API_KEY = process.env.REACT_APP_API_KEY;
 
+/* 
+
 //실시간 시간을 업데이트 하기 위한 함수 생성
 function useInterval(callback, delay) {
   const savedCallback = useRef(); // 최근에 들어온 callback을 저장할 ref를 하나 만든다.
@@ -43,8 +45,7 @@ const MomentDateChage = () => {
   return nowTime;
 }
 
-
-
+*/
 
 function MainPage() {
 
@@ -55,7 +56,8 @@ function MainPage() {
     const [selectedItem1, setSelectedItem1] = useState('서울'); //기본 설정 위치
     const [selectedItem2, setSelectedItem2] = useState('종로구'); //기본 설정 위치
 
-    const [res, setRes] = useState({pm25Value : 0}); //이렇게 억지 초기화 가능... 
+    const [res, setRes] = useState({pm25Value : 0 , pm10Value : 0, khaiValue : 0, khaiGrade : 1}); //이렇게 억지 초기화 가능... 
+    let formattedDate = moment(res.dataTime).format("YYYY년 MM월 DD일 HH:mm");
 
     // useEffect(() => {
     //   // fetchData 함수 내에서 axios.get을 호출하여 데이터를 가져옴
@@ -121,9 +123,10 @@ function MainPage() {
             khaiValue: item.khaiValue,
             khaiGrade: item.khaiGrade,
             pm10Value: item.pm10Value,
-            pm10Grade: item.pm10Grade,
+            //pm10Grade: item.pm10Grade,
             pm25Value: item.pm25Value,
-            pm25Grade: item.pm25Grade
+            //pm25Grade: item.pm25Grade,
+            dataTime : item.dataTime
           };
           setRes(extractedData)
         })
@@ -179,7 +182,7 @@ function MainPage() {
               <div>
                 <div style={{display:"flex", flexDirection:"column", gap:"40px"}}>
                     <div className={styles.titlegroup}>
-                      <p className={styles.titlelocation}>서울 성동구</p>
+                      <p className={styles.titlelocation}>{selectedItem1} {selectedItem2}</p>
                       <div className={styles.titlefavimgdiv}><img className={styles.titlefavimg} src={favicon} alt="titlefavicon"/></div>
                     </div>
   
@@ -227,11 +230,11 @@ function MainPage() {
                     </div>
                   </div>
 
-                  <div style={{display:"flex", marginLeft: "0px"}}><CAIComponent></CAIComponent></div>
+                  <div style={{display:"flex", marginLeft: "0px"}}><CAIComponent khaiValue={res.khaiValue}/></div>
 
                   <div style={{display:"flex", flexDirection:"row", gap:"20px"}}>
-                        <div style={{marginTop:"0px", marginLeft:"0px"}}><FineDustcom res={res}/></div>
-                        <div style={{marginTop:"0px", marginLeft:"0px"}}><UltraDust></UltraDust></div>
+                        <div style={{marginTop:"0px", marginLeft:"0px"}}><FineDustcom pm10Value={res.pm10Value}/></div>
+                        <div style={{marginTop:"0px", marginLeft:"0px"}}><UltraDust pm25Value={res.pm25Value}/></div>
                   </div>
                 </div>
               </div>
@@ -239,8 +242,8 @@ function MainPage() {
               {/* 오른쪽 한 묶음 */}
               <div>
                 <div style={{display:"flex", flexDirection:"column" ,gap:"40px"}}>
-                  <div className={styles.currentTime}><p>{MomentDateChage()}</p></div>
-                  <div style={{marginTop:"0px", marginLeft:"0px"}}><NoticeCom></NoticeCom></div>
+                  <div className={styles.currentTimediv}><div className={styles.currentTime}>{formattedDate} 시 기준</div></div>
+                  <div style={{marginTop:"0px", marginLeft:"0px"}}><NoticeCom khaiGrade={res.khaiGrade}/></div>
                   <div style={{marginTop:"0px", marginLeft:"0px"}}><MapCom></MapCom></div>
                 </div>
               </div>

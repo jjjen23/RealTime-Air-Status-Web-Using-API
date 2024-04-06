@@ -200,13 +200,22 @@
   width: 100%;
 }
 
-.desktop .div .currentTime {
+.desktop .div .currentTimediv {
+  margin-top: -15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
-.desktop .div .currentTime p {
+.desktop .div .currentTimediv .currentTime {
   color: #505050;
   font-family: "SCDream2";
   font-size: 20px;

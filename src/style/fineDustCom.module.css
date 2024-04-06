@@ -34,7 +34,6 @@
 }
 
 .box .finedust .overlay .value {
-  color: #8bc347;
   font-family: "SUITE-ExtraBold";
   font-size: 74px;
   position: absolute;
@@ -45,7 +44,6 @@
 }
 
 .box .finedust .overlay .state {
-  color: #8bc347;
   font-family: "SCDream5";
   font-size: 40px;
   position: absolute;

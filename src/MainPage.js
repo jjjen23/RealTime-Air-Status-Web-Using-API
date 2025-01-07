@@ -118,6 +118,7 @@ function MainPage() {
       axios.get(`http://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty?stationName=${setSelectedItem2}&dataTerm=daily&pageNo=1&numOfRows=1&returnType=json&serviceKey=${API_KEY}&ver=1.4`)
         .then((결과) => {
           const item = 결과.data.response.body.items[0]
+          //console.log("tem출력:" , item)
           const extractedData = {
             stationName: item.stationName,
             khaiValue: item.khaiValue,
@@ -136,6 +137,32 @@ function MainPage() {
         });
     }   
 
+    // 대기 예측 정보API : 대기질 예측모델결과 애니메이션 이미지제공
+    // function requestData3() {
+    //   axios.get(`http://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getMinuDustFrcstDspth?searchDate=2024-04-08&returnType=json&serviceKey=${API_KEY}&numOfRows=100&pageNo=1&ver=1.1`)
+    //     .then((결과) => {
+    //       console.log(결과.data);
+    //     })
+
+    //     .catch(() => {
+    //       console.log('4실패');
+    //     });
+    // }   
+
+    //requestData3(); 
+
+    // 시도별 실시간 평균정보 API : 미세먼지, 초미세먼지 평균정보만 있음
+    function requestData4() {
+      axios.get(`http://apis.data.go.kr/B552584/ArpltnStatsSvc/getCtprvnMesureLIst?itemCode=PM10&dataGubun=HOUR&pageNo=1&numOfRows=1&returnType=json&serviceKey=${API_KEY}`)
+        .then((결과) => {
+          console.log(결과.data.response.body.items[0]);
+        })
+
+        .catch(() => {
+          console.log('4:실패');
+        });
+    }   
+    requestData4(); 
 
 
     const handleItemClick1 = (item) => {
